@@ -1,0 +1,5 @@
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[user]
+	name = Josh Medeski
+	email = josh.medeski@gmail.com
