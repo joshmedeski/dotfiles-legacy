@@ -1,3 +1,4 @@
+" cSpell:disable
 call plug#begin()
   Plug 'chrisbra/vim-autosave'
   Plug 'arcticicestudio/nord-vim'
@@ -34,6 +35,7 @@ call plug#begin()
   Plug 'voldikss/vim-floaterm'
   Plug 'wakatime/vim-wakatime'
 call plug#end()
+" cSpell:enable
 
 command! LF FloatermNew lf
 
@@ -174,7 +176,9 @@ nmap <leader>q :wq<CR>
 nmap <leader>y "+y
 nmap <leader><return> :w!<CR>
 
+" cSpell:disable
 nnoremap <Leader>p <cmd>lua require'telescope.builtin'.find_files{}<CR>
+" cSpell:enable
 
 nmap <leader>bb :Buffers<CR>
 nmap <leader>bp :bp<CR>
