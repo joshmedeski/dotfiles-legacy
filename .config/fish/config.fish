@@ -34,6 +34,9 @@ alias tnp="nvim ~/.todoist/projects/(todoist projects | fzf | cut -d ' ' -f 1 | 
 alias tnl="nvim ~/.todoist/labels/(todoist labels | fzf | cut -d ' ' -f 1 | tr -d '[:space:]').md"
 alias tnt="nvim ~/.todoist/tasks/(todoist show | fzf | cut -d ' ' -f 1 | tr -d '[:space:]').md"
 
+alias tmuxx="tmux attach-session -t (tmux list-sessions | fzf | cut -d ':' -f 1)"
+alias tx=tmuxinator
+
 alias v="v (fzf)"
 
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
