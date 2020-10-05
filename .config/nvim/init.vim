@@ -37,6 +37,11 @@ call plug#end()
 
 command! LF FloatermNew lf
 
+augroup nord-theme-overrides
+  autocmd!
+  " Change comment color
+  autocmd ColorScheme nord highlight Comment ctermfg=13
+augroup END
 
 " Thanks https://www.chrisatmachine.com/Neovim/17-snippets/
 " Use <C-l> for trigger snippet expand.
