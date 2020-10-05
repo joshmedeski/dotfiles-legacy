@@ -54,6 +54,8 @@ windows:
         - npm -g outdated
         - brew outdated
 
+  - nvim: nvim +PlugUpdate
+
   - homebrew:
       layout: tiled
       panes: 
