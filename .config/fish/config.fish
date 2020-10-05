@@ -13,8 +13,7 @@ set -Ux EDITOR nvim
 alias l="exa -a --group-directories-first"
 alias ll="exa -al --group-directories-first"
 
-alias g="git status"
-alias ga="git add"
+alias g="lazygit"
 alias ga="git add"
 alias gb="git branch -v"
 alias gc="git commit -v"
@@ -23,7 +22,7 @@ alias gd="git diff"
 alias gl="git pull"
 alias gp="git push"
 alias gpr="gh pr create"
-alias gst="git status"
+alias gs="git status"
 
 alias u="ultralist"
 alias uc="ultralist c (ul | fzf | cut -c 1)"
