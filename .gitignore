@@ -1,0 +1,16 @@
+
+.aws/credentials
+.ssh/config
+.wakatime.cfg
+Library/Application Support/Insomnia/**/*
+
+Library/Preferences/net.freemacsoft.AppCleaner.plist
+Library/Preferences/com.apple.iChat.StatusMessages.plist
+Library/Preferences/com.apple.iChat.Jabber.plist
+Library/Preferences/com.apple.iChat.AIM.plist
+Library/Preferences/com.apple.Terminal.plist
+Library/Preferences/com.apple.Music.plist
+Library/Preferences/com.apple.Music.eq.plist
+Library/Containers/com.flexibits.fantastical2.mac/Container.plist
+Library/Containers/com.IdeaPunch.ColorSlurp/Data/Library/Application Support/default.realm
+.fasd
