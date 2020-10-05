@@ -1,40 +1,28 @@
 " cSpell:disable
 call plug#begin()
-  Plug 'wellle/context.vim'
-  Plug 'chrisbra/vim-autosave'
   Plug 'arcticicestudio/nord-vim'
-  Plug 'dag/vim-fish'
-  Plug 'digitaltoad/vim-pug'
+  Plug 'chrisbra/vim-autosave'
   Plug 'editorconfig/editorconfig-vim'
-  Plug 'fatih/vim-go'
   Plug 'godlygeek/tabular'
   Plug 'jceb/vim-orgmode'
-  Plug 'jparise/vim-graphql'
-  Plug 'jreybert/vimagit'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'kdheepak/lazygit.nvim'
-  Plug 'leafgarland/typescript-vim'
   Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
   Plug 'mattn/emmet-vim'
-  Plug 'maxmellon/vim-jsx-pretty'
   Plug 'mhinz/vim-signify'
   Plug 'mhinz/vim-startify'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-lua/popup.nvim'
-  Plug 'nvim-lua/telescope.nvim'
   Plug 'nvim-treesitter/nvim-treesitter'
-  Plug 'pangloss/vim-javascript'
-  Plug 'peitalin/vim-jsx-typescript'
-  Plug 'plasticboy/vim-markdown'
   Plug 'preservim/nerdtree'
+  Plug 'sheerun/vim-polyglot'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'voldikss/fzf-floaterm'
   Plug 'voldikss/vim-floaterm'
   Plug 'wakatime/vim-wakatime'
+  Plug 'wellle/context.vim'
 call plug#end()
 " cSpell:enable
 
@@ -175,7 +163,7 @@ nmap <leader>l :LF<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 "nmap <leader>p :Prettier<CR>
 nmap <leader>q :wq<CR>
-nmap <leader>y "+y
+nmap <leader>y "*y
 nmap <leader><return> :w!<CR>
 
 " cSpell:disable
