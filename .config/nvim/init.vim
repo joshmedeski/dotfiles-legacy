@@ -1,5 +1,6 @@
 " cSpell:disable
 call plug#begin()
+  Plug 'wellle/context.vim'
   Plug 'chrisbra/vim-autosave'
   Plug 'arcticicestudio/nord-vim'
   Plug 'dag/vim-fish'
