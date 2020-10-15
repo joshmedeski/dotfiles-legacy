@@ -5,7 +5,10 @@ export BAT_THEME="Nord"
 fnm env --multi | source
 
 set -x PATH (pwd)"/git-fuzzy/bin:$PATH"
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
+
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_OPTS='--height 80% --reverse'
 export GOPATH=(go env GOPATH)
 
 set -Ux EDITOR nvim
