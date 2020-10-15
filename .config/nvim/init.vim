@@ -1,5 +1,5 @@
-" cSpell:disable
 call plug#begin()
+  Plug 'airblade/vim-rooter'
   Plug 'arcticicestudio/nord-vim'
   Plug 'chrisbra/vim-autosave'
   Plug 'editorconfig/editorconfig-vim'
@@ -24,7 +24,6 @@ call plug#begin()
   Plug 'wakatime/vim-wakatime'
   Plug 'wellle/context.vim'
 call plug#end()
-" cSpell:enable
 
 command! LF FloatermNew lf
 
@@ -57,9 +56,6 @@ let g:go_def_mapping_enabled = 0
 
 " Highlight color
 hi Visual term=reverse cterm=reverse guibg=Grey
-
-" cSpell
-set spellfile=~/.config/nvim/spell/en.utf-8.add
 
 set nocompatible
 filetype indent plugin on
@@ -154,9 +150,9 @@ nmap <leader>/ :Rg<CR>
 nmap <leader>; :History<CR>
 
 nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
+
 nmap <leader>b :Buffers<CR>
 nmap <leader>c "*y
-nmap <leader>f :Files<CR>
 nmap <leader>g :MagitOnly<CR>
 nmap <leader>h :noh<CR>
 nmap <leader>l :LF<CR>
@@ -166,16 +162,13 @@ nmap <leader>q :wq<CR>
 nmap <leader>y "*y
 nmap <leader><return> :w!<CR>
 
-" cSpell:disable
 nnoremap <Leader>p <cmd>lua require'telescope.builtin'.find_files{}<CR>
-" cSpell:enable
 
 nmap <leader>bb :Buffers<CR>
 nmap <leader>bp :bp<CR>
+nmap <leader><TAB> :bp<CR>
 nmap <leader>bd :bd<CR>
 nmap <leader>bn :bn<CR>
-
-nmap <leader>fs :w<CR>
 
 nmap <leader>wc :wincmd c<CR>
 nmap <leader>wh :wincmd h<CR>
