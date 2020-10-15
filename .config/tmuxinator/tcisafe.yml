@@ -1,0 +1,21 @@
+# /Users/joshmedeski/.config/tmuxinator/tcisafe.yml
+# spell-checker: ignore tcisafe, repos, strapi, nvim, postgres, pgcli, lazydocker, lazygit, hasura
+name: tcisafe
+root: ~/repos/tcisafe/
+on_project_first_start: docker-compose up -d
+on_project_stop: docker-compose down
+startup_window: shell
+windows:
+  - express:
+      root: ~/repos/tcisafe/express
+      panes:
+        - yarn dev
+  - strapi:
+      root: ~/repos/tcisafe/strapi
+      panes:
+        - yarn dev
+  - account:
+      root: ~/repos/tcisafe/account
+      panes:
+        - yarn start
+  - pgcli: pgcli -h localhost -p 5432 -u tcisafe
