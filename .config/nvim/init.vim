@@ -112,6 +112,8 @@ set tabstop=2
 
 colorscheme nord
 
+highlight CocInfoSign ctermfg=Yellow guifg=#fab005
+
 let NERDTreeShowHidden=1
 
 let g:airline#extensions#tabline#enabled=1
