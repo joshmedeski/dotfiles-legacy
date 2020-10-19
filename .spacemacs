@@ -484,7 +484,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
                 t)
   (with-eval-after-load 'org
     (setq org-directory "~/org-roam")
-    (setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)"
+    (setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "PROJECT(p)" "|" "DONE(d)"
                                         "CANCELLED(c)")))))
 
 (defun dotspacemacs/user-load ()
