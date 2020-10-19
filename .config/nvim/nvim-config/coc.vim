@@ -31,7 +31,7 @@ inoremap <silent><expr> <Tab>
 " Prettier
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
-" Remap for do codeAction of selected region
+" Remap or do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
   execute 'CocCommand actions.open ' . a:type
 endfunction
