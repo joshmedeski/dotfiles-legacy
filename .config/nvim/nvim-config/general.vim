@@ -40,7 +40,7 @@ set nobackup
 set nowb
 set noswapfile
 
-" Indentaion 
+" Indentation 
 set expandtab
 set smarttab
 set shiftwidth=2
