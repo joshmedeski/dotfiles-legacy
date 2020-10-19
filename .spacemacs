@@ -49,6 +49,7 @@ This function should only modify configuration layer settings."
      syntax-checking
      typescript
      version-control
+     ;; TODO disable when loading on ipad
      (colors :variables colors-enable-nyan-cat-progress-bar
              t))
    ;; List of additional packages that will be installed without being
