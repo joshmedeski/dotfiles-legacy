@@ -4,7 +4,7 @@
 	name = Josh Medeski
 	email = josh.medeski@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = /Users/joshmedeski/.gitignore
 [color]
@@ -24,3 +24,5 @@
 [diff-so-fancy]
 	markEmptyLines = false
 	rulerWidth = 47
+[commit]
+	verbose = true
