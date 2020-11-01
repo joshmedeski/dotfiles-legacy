@@ -1,0 +1,1 @@
+/Users/joshmedeski/go/src/github.com/gokcehan/lf/etc/lfcd.fish
