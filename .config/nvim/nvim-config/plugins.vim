@@ -16,6 +16,7 @@ call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'preservim/nerdtree'
+  Plug 'rhysd/committia.vim'
   Plug 'sheerun/vim-polyglot'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
