@@ -2,7 +2,7 @@ starship init fish | source
 export BAT_THEME="Nord" 
 
 # fast node manager
-fnm env --multi | source
+fnm env | source
 
 set -x PATH (pwd)"/git-fuzzy/bin:$PATH"
 
