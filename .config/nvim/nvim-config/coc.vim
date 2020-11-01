@@ -31,11 +31,6 @@ inoremap <silent><expr> <Tab>
 " Prettier
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
-" Remap or do codeAction of selected region
-function! s:cocActionsOpenFromSelected(type) abort
-  execute 'CocCommand actions.open ' . a:type
-endfunction
-
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
