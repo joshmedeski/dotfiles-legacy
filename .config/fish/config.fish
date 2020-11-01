@@ -39,5 +39,6 @@ alias uc="ultralist c (ul | fzf | cut -c 1)"
 alias ul="ultralist list not:completed group:context"
 alias up="~/bin/update.sh"
 alias v="v (fzf)"
+alias zat="docker run -v (pwd):/data -p 4567:4567 -it pindar/zat zat"
 
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
