@@ -1,3 +1,9 @@
 [package]
 disabled = true
 
+[username]
+disabled = true
+
+[directory]
+truncation_symbol="../"
+
