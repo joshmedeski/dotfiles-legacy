@@ -18,6 +18,7 @@ call plug#begin()
   Plug 'preservim/nerdtree'
   Plug 'rhysd/committia.vim'
   Plug 'sheerun/vim-polyglot'
+  Plug 'tmux-plugins/vim-tmux'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
