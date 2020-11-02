@@ -5,6 +5,7 @@ export BAT_THEME="Nord"
 fnm env | source
 
 set -x PATH (pwd)"/git-fuzzy/bin:$PATH"
+set fish_greeting
 
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
