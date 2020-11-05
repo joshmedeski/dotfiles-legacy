@@ -4,9 +4,6 @@ disabled = true
 [username]
 disabled = true
 
-[directory]
-truncation_symbol="../"
-
 [hostname]
 disabled = true
 
