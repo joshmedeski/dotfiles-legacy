@@ -16,10 +16,11 @@ nmap <leader>fs :w<cr>
 nmap <leader>h :noh<cr>
 nmap <leader>j :Files<cr>
 nmap <leader>l :LF<cr>
+nmap <leader>m :MaximizerToggle!<cr>
+nmap <leader>wf :MaximizerToggle!<cr>
 nmap <leader>n :bn<cr>
 nmap <leader>p :bp<cr>
 nmap <leader>wc :wincmd c<cr>
-nmap <leader>wf :MaximizerToggle!<cr>
 nmap <leader>wh :wincmd h<cr>
 nmap <leader>wj :wincmd j<cr>
 nmap <leader>wk :wincmd k<cr>
