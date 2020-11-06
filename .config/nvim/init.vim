@@ -2,10 +2,13 @@ call plug#begin()
 source $HOME/.config/nvim/nvim-config/plugins.vim
 call plug#end()
 
+source $HOME/.config/nvim/nvim-config/autocmd.vim
 source $HOME/.config/nvim/nvim-config/coc.vim
 source $HOME/.config/nvim/nvim-config/general.vim
-source $HOME/.config/nvim/nvim-config/leader.vim
 source $HOME/.config/nvim/nvim-config/theme.vim
+
+let mapleader=" "
+source $HOME/.config/nvim/nvim-config/leader.vim
 
 " Miscellaneous
 command! LF FloatermNew lf

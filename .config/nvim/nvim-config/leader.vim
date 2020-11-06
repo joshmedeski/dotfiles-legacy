@@ -1,5 +1,3 @@
-let mapleader=" "
-
 nmap <leader>% :source %<cr>
 nmap <leader>' :Marks<cr>
 nmap <leader>/ :Rg<cr>
