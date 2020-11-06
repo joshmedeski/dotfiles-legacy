@@ -18,7 +18,7 @@ set cmdheight=1
 set laststatus=2
 set confirm
 set mouse=a
-set number relativenumber
+set number
 set hid
 set notimeout ttimeout ttimeoutlen=200
 set nowrap
