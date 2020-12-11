@@ -18,6 +18,7 @@ export GOPATH=(go env GOPATH)
 set -Ux EDITOR nvim
 
 alias alacritty-colorscheme="python3 /Users/joshmedeski/Library/Python/3.9/lib/python/site-packages/alacritty_colorscheme/cli.py"
+alias acs="alacritty-colorscheme -a (alacritty-colorscheme -l | fzf --preview 'alacritty-colorscheme -a {} && msgcat --color=test')"
 alias g="lazygit"
 alias ga="git add"
 alias gb="git branch -v"
