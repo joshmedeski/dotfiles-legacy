@@ -51,3 +51,10 @@ alias up="~/bin/update.sh"
 alias v="v (fzf)"
 alias zat="docker run -v (pwd):/data -p 4567:4567 -it pindar/zat zat"
 
+set fish_color_valid_path normal
+set fish_color_command normal
+set fish_color_error red
+set fish_color_autosuggestion green
+set fish_color_param magenta
+set fish_color_terminators white
+set fish_color_redirections yellow
