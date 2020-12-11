@@ -1,3 +1,4 @@
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 starship init fish | source
 export BAT_THEME="Nord" 
 
@@ -47,4 +48,3 @@ alias up="~/bin/update.sh"
 alias v="v (fzf)"
 alias zat="docker run -v (pwd):/data -p 4567:4567 -it pindar/zat zat"
 
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
