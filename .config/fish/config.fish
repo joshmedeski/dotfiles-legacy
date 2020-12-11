@@ -1,4 +1,5 @@
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -g fish_user_paths "/Users/joshmedeski/go/bin" $fish_user_paths
 starship init fish | source
 export BAT_THEME="Nord" 
 
