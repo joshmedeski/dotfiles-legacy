@@ -7,13 +7,16 @@
 This is a Quick Look plug-in that renders source code with syntax highlighting,
 using the [Highlight library](http://www.andre-simon.de).
 
-To install Highlight, [download the library manually](http://www.andre-simon.de/zip/download.php), or use Homebrew `brew install highlight`
-
 To install the plug-in, just drag it to `~/Library/QuickLook`.
 You may need to create that folder if it doesn't already exist.
 
-Alternative, if you use [Homebrew Cask](https://github.com/caskroom/homebrew-cask),
+Alternatively, if you use [Homebrew Cask](https://github.com/caskroom/homebrew-cask),
 install with `brew cask install qlcolorcode`.
+
+Also available on MacPorts: `port install QLColorCode`.
+
+To build the project, you must have Boost headers on your system in
+`/opt/local/include` or `/usr/local/include`.
 
 ## Settings
 
@@ -32,9 +35,10 @@ Setting the font size (default is `10`):
 
     defaults write org.n8gray.QLColorCode fontSizePoints 9
 
-Setting the color style (default is `edit-xcode`, see [all available themes](http://www.andre-simon.de/doku/highlight/theme-samples.php)):
+Setting the color style for `light` and `dark` mode (see [all available themes](http://www.andre-simon.de/doku/highlight/theme-samples.php)):
 
-    defaults write org.n8gray.QLColorCode hlTheme ide-xcode
+    defaults write org.n8gray.QLColorCode lightTheme solarized-light
+    defaults write org.n8gray.QLColorCode darkTheme solarized-dark
 
 Setting the thumbnail color style (deactivated by default):
 
