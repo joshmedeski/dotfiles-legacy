@@ -33,5 +33,8 @@ yabai -m config right_padding                15
 yabai -m config window_gap                   15
 
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Archive Utility$" manage=off
+yabai -m rule --add app="^Wally$" manage=off
+yabai -m rule --add app="^ColorSlurp$" manage=off
 
 echo "yabai configuration loaded.."
