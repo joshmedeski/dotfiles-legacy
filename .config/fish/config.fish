@@ -18,7 +18,6 @@ source ~/.config/fish/fnm.fish
 
 export GOPATH=(go env GOPATH)
 export BAT_THEME="Nord" 
-export FZF_TMUX=1
 export FZF_TMUX_OPTS="-p"
 export FZF_CTRL_R_OPTS="--reverse --preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 
