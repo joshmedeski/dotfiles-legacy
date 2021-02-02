@@ -54,7 +54,11 @@ This function should only modify configuration layer settings."
      typescript
      version-control
      (org :variables
-          org-enable-roam-support t))
+          org-enable-roam-support t)
+     (wakatime :variables
+               wakatime-api-key  "ca2c3a11-d14b-4f28-92e8-ff6a2dadd022"
+               ;; use the actual wakatime path
+               wakatime-cli-path "/usr/local/bin/wakatime"))
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
@@ -180,7 +184,8 @@ It should only modify the values of Spacemacs settings."
    ;; `recents' `bookmarks' `projects' `agenda' `todos'.
    ;; List sizes may be nil, in which case
    ;; `spacemacs-buffer-startup-lists-length' takes effect.
-   dotspacemacs-startup-lists '((recents . 5)
+   dotspacemacs-startup-lists '((agenda . 10)
+                                (recents . 5)
                                 (projects . 7))
 
    ;; True if the home buffer should respond to resize events. (default t)
@@ -201,7 +206,7 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
+   dotspacemacs-themes '(spacemacs-dark nord
                          spacemacs-light)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
@@ -505,6 +510,11 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (setq org-roam-graph-viewer
+        (lambda (file)
+          (let ((org-roam-graph-viewer "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"))
+            (org-roam-graph--open (concat "file://///wsl$/Ubuntu" file)))))
+  (setq powerline-default-separator 'nil)
   (global-set-key [mouse-4] 'scroll-down-line)
   (global-set-key [mouse-5] 'scroll-up-line)
   (setq truncate-lines nil)
@@ -518,50 +528,8 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(org-roam-server simple-httpd org-roam-bibtex
-                                               bibtex-completion biblio parsebib biblio-core
-                                               company-org-roam org-roam emacsql-sqlite3
-                                               emacsql unfill tide typescript-mode smeargle
-                                               orgit org-projectile org-category-capture
-                                               org-present org-pomodoro alert log4e gntp
-                                               org-mime org-download mwim mmm-mode markdown-toc
-                                               markdown-mode magit-gitflow magit-popup htmlize
-                                               helm-gitignore helm-company helm-c-yasnippet
-                                               gnuplot gitignore-mode gitconfig-mode gitattributes-mode
-                                               git-timemachine git-messenger git-link git-gutter-fringe+
-                                               git-gutter-fringe fringe-helper git-gutter+
-                                               git-gutter gh-md fuzzy flyspell-correct-helm
-                                               flyspell-correct flycheck-pos-tip pos-tip
-                                               flycheck evil-magit magit git-commit with-editor
-                                               transient diff-hl company-statistics company
-                                               auto-yasnippet yasnippet auto-dictionary ac-ispell
-                                               auto-complete ws-butler winum which-key volatile-highlights
-                                               vi-tilde-fringe uuidgen use-package toc-org
-                                               spaceline powerline restart-emacs request
-                                               rainbow-delimiters popwin persp-mode pcre2el
-                                               paradox spinner org-plus-contrib org-bullets
-                                               open-junk-file neotree move-text macrostep
-                                               lorem-ipsum linum-relative link-hint indent-guide
-                                               hydra lv hungry-delete hl-todo highlight-parentheses
-                                               highlight-numbers parent-mode highlight-indentation
-                                               helm-themes helm-swoop helm-projectile projectile
-                                               pkg-info epl helm-mode-manager helm-make helm-flx
-                                               helm-descbinds helm-ag google-translate golden-ratio
-                                               flx-ido flx fill-column-indicator fancy-battery
-                                               eyebrowse expand-region exec-path-from-shell
-                                               evil-visualstar evil-visual-mark-mode evil-unimpaired
-                                               f evil-tutor evil-surround evil-search-highlight-persist
-                                               highlight evil-numbers evil-nerd-commenter
-                                               evil-mc evil-matchit evil-lisp-state smartparens
-                                               evil-indent-plus evil-iedit-state iedit evil-exchange
-                                               evil-escape evil-ediff evil-args evil-anzu
-                                               anzu evil goto-chg undo-tree eval-sexp-fu
-                                               elisp-slime-nav dumb-jump dash s diminish
-                                               define-word column-enforce-mode clean-aindent-mode
-                                               bind-map bind-key auto-highlight-symbol auto-compile
-                                               packed aggressive-indent adaptive-wrap ace-window
-                                               ace-link ace-jump-helm-line helm avy helm-core
-                                               popup async)))
+ '(package-selected-packages
+   '(wakatime-mode stickyfunc-enhance srefactor reveal-in-osx-finder ranger rainbow-mode rainbow-identifiers pbcopy osx-trash osx-dictionary launchctl emoji-cheat-sheet-plus company-emoji color-identifiers-mode org-roam-server simple-httpd org-roam-bibtex bibtex-completion biblio parsebib biblio-core company-org-roam org-roam emacsql-sqlite3 emacsql unfill tide typescript-mode smeargle orgit org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download mwim mmm-mode markdown-toc markdown-mode magit-gitflow magit-popup htmlize helm-gitignore helm-company helm-c-yasnippet gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck evil-magit magit git-commit with-editor transient diff-hl company-statistics company auto-yasnippet yasnippet auto-dictionary ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired f evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
