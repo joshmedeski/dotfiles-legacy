@@ -31,10 +31,6 @@ set t_vb=
 set tm=500
 set encoding=utf8
 
-" Set to auto read when a file is changed from the outside
-set autoread
-au FocusGained,BufEnter * checktime
-
 " Turn backup off
 set nobackup
 set nowb
