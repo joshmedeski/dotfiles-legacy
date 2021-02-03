@@ -12,6 +12,7 @@ SETUVAR _fish_abbr_aa:nvim\x20\x7e/\x2econfig/alacritty/alacritty\x2eyml
 SETUVAR _fish_abbr_acs:alacritty\x2dcolorscheme\x20\x2da\x20\x28alacritty\x2dcolorscheme\x20\x2dl\x20\x7c\x20fzf\x20\x2d\x2dpreview\x20\x27alacritty\x2dcolorscheme\x20\x2da\x20\x7b\x7d\x20\x26\x26\x20msgcat\x20\x2d\x2dcolor\x3dtest\x27\x29
 SETUVAR _fish_abbr_b:brew
 SETUVAR _fish_abbr_bc:brew\x20cleanup
+SETUVAR _fish_abbr_bd:brew\x20doctor
 SETUVAR _fish_abbr_bi:brew\x20install
 SETUVAR _fish_abbr_bo:brew\x20outdated
 SETUVAR _fish_abbr_bs:brew\x20services
@@ -25,6 +26,7 @@ SETUVAR _fish_abbr_clera:clear
 SETUVAR _fish_abbr_dcb:docker\x2dcompose\x20build
 SETUVAR _fish_abbr_dcd:docker\x2dcompose\x20down
 SETUVAR _fish_abbr_dcdn:docker\x2dcompose\x20down
+SETUVAR _fish_abbr_dcdv:docker\x2dcompose\x20down\x20\x2dv
 SETUVAR _fish_abbr_dce:docker\x2dcompose\x20exec
 SETUVAR _fish_abbr_dck:docker\x2dcompose\x20kill
 SETUVAR _fish_abbr_dcl:docker\x2dcompose\x20logs
@@ -37,10 +39,11 @@ SETUVAR _fish_abbr_dcrestart:docker\x2dcompose\x20restart
 SETUVAR _fish_abbr_dcrm:docker\x2dcompose\x20rm
 SETUVAR _fish_abbr_dcstart:docker\x2dcompose\x20start
 SETUVAR _fish_abbr_dcstop:docker\x2dcompose\x20stop
-SETUVAR _fish_abbr_dcu:docker\x2dcompose\x20up
+SETUVAR _fish_abbr_dcu:docker\x2dcompose\x20up\x20\x2dd
 SETUVAR _fish_abbr_dcud:docker\x2dcompose\x20up\x20\x2dd
 SETUVAR _fish_abbr_dcup:docker\x2dcompose\x20up\x09Build\x2c\x20\x28re\x29create\x2c\x20start\x2c\x20and\x20attach\x20to\x20containers\x20for\x20a\x20service\x0aabbr\x20dcupd\x09docker\x2dcompose\x20up\x20\x2dd\x20Same\x20as\x20dcup\x2c\x20but\x20starts\x20as\x20daemon
 SETUVAR _fish_abbr_dcupd:docker\x2dcompose\x20up\x20\x2dd
+SETUVAR _fish_abbr_dps:docker\x20ps\x20\x2d\x2dformat\x20\x27table\x20\x7b\x7b\x2eNames\x7d\x7d\x5ct\x7b\x7b\x2eStatus\x7d\x7d\x27
 SETUVAR _fish_abbr_e:exit
 SETUVAR _fish_abbr_ff:nvim\x20\x7e/\x2econfig/fish/config\x2efish
 SETUVAR _fish_abbr_ga:git\x20add
@@ -57,6 +60,7 @@ SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_hd:history\x20delete\x20\x2d\x2dexact\x20\x2d\x2dcase\x2dsensitive\x20\x5c\x27\x28history\x20\x7c\x20fzf\x2dtmux\x20\x2dp\x20\x2dm\x20\x2d\x2dreverse\x29\x5c\x27
 SETUVAR _fish_abbr_l:exa\x20\x2da\x20\x2d\x2dgroup\x2ddirectories\x2dfirst
+SETUVAR _fish_abbr_ld:lazydocker
 SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fish_abbr_ll:exa\x20\x2dal\x20\x2d\x2dgroup\x2ddirectories\x2dfirst
 SETUVAR _fish_abbr_mux:tmuxinator
