@@ -1,13 +1,10 @@
-o "Finder: show all filename extensions"
+echo "Finder: show all filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# echo "show hidden files by default"
+echo "show hidden files by default"
 defaults write com.apple.Finder AppleShowAllFiles -bool false
 
-# echo "only use UTF-8 in Terminal.app"
-defaults write com.apple.terminal StringEncodings -array 4
-
-# echo "expand save dialog by default"
+echo "expand save dialog by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 # echo "show the ~/Library folder in Finder"
@@ -25,11 +22,11 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # echo "Enable the 2D Dock"
 # defaults write com.apple.dock no-glass -bool true
 
-# Automatically hide and show the Dock
-# defaults write com.apple.dock autohide -bool true
+echo "Automatically hide and show the Dock"
+defaults write com.apple.dock autohide -bool true
 
-# echo "Make Dock icons of hidden applications translucent"
-# defaults write com.apple.dock showhidden -bool true
+#echo "Make Dock icons of hidden applications translucent"
+#defaults write com.apple.dock showhidden -bool true
 
 #echo "Enable iTunes track notifications in the Dock"
 #defaults write com.apple.dock itunes-notifications -bool true
@@ -47,11 +44,8 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 #echo "Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons"
 #defaults write com.apple.finder QuitMenuItem -bool true
 
-# Disable window animations and Get Info animations in Finder
-# defaults write com.apple.finder DisableAllAnimations -bool true
-
-echo "Use current directory as default search scope in Finder"
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+echo "Disable window animations and Get Info animations in Finder"
+defaults write com.apple.finder DisableAllAnimations -bool true
 
 echo "Show Path bar in Finder"
 defaults write com.apple.finder ShowPathbar -bool true
@@ -77,27 +71,27 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # echo "Show indicator lights for open applications in the Dock"
 # defaults write com.apple.dock show-process-indicators -bool true
 
-# Don’t animate opening applications from the Dock
-# defaults write com.apple.dock launchanim -bool false
+echo "Don’t animate opening applications from the Dock"
+defaults write com.apple.dock launchanim -bool false
 
 #echo "Display ASCII control characters using caret notation in standard text views"
 # Try e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`
 #defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
 
-echo "Disable press-and-hold for keys in favor of key repeat"
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+#echo "Disable press-and-hold for keys in favor of key repeat"
+#defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-echo "Set a blazingly fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 2
+#echo "Set a blazingly fast keyboard repeat rate"
+#defaults write NSGlobalDomain KeyRepeat -int 2
 
-echo "Set a shorter Delay until key repeat"
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+#echo "Set a shorter Delay until key repeat"
+#defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 #echo "Disable auto-correct"
 #defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Disable opening and closing window animations
-# defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+echo "Disable opening and closing window animations"
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
 # echo "Disable disk image verification"
 # defaults write com.apple.frameworks.diskimages skip-verify -bool true
