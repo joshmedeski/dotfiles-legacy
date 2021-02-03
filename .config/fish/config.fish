@@ -1,8 +1,8 @@
 # disable fish greeting
 set fish_greeting
 
-# starship
 starship init fish | source
+zoxide init fish | source
 
 # language
 set -x LANG   en_US.UTF-8
