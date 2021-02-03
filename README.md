@@ -13,7 +13,7 @@ This is the home of all my dotfiles. These are special files that add custom con
 ## TODO TMUX
 
 - [ ] When a pane is split, count the number of rows outputted by the previous command and resize it to that amount
-- [ ] Have neovim auto run `tmux source-file ~/.tmux.conf` when ~/.tmux.conf` is saved (create vim plugin)
+- [ ] Have neovim auto run `tmux source-file ~/.tmux.conf` when `~/.tmux.conf` is saved (create vim plugin)
 - [ ] Bind <prefix> ? to display all keyboard shortcuts (including custom mappings). Create keymapping shortcut
 - [ ] Fork and create my own `man tmux` page?
 - [ ] Setup neovim-remote to combine with custom tmux commands (like lf)
